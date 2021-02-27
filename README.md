@@ -1,2 +1,2 @@
 # rush
-good stuffs
+Srping boot project good stuffs.
