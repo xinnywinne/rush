@@ -9,7 +9,7 @@ public class Order {
 
     private Integer orderStatus;
 
-    private Long seckillActivityId;
+    private Long rushActivityId;
 
     private Long userId;
 
@@ -43,12 +43,12 @@ public class Order {
         this.orderStatus = orderStatus;
     }
 
-    public Long getSeckillActivityId() {
-        return seckillActivityId;
+    public Long getRushActivityId() {
+        return rushActivityId;
     }
 
-    public void setSeckillActivityId(Long seckillActivityId) {
-        this.seckillActivityId = seckillActivityId;
+    public void setRushActivityId(Long rushActivityId) {
+        this.rushActivityId = rushActivityId;
     }
 
     public Long getUserId() {
