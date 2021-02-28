@@ -12,7 +12,7 @@
     <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, order_no, order_status, rush_activity_id, user_id, order_amount, create_time, 
+    id, order_no, order_status, rush_activity_id, user_id, order_amount, create_time,
     pay_time
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
@@ -26,11 +26,11 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.baibai.rush.db.po.Order">
-    insert into rush_order (id, order_no, order_status, 
+    insert into rush_order (id, order_no, order_status,
       rush_activity_id, user_id, order_amount, 
       create_time, pay_time)
     values (#{id,jdbcType=BIGINT}, #{orderNo,jdbcType=VARCHAR}, #{orderStatus,jdbcType=INTEGER}, 
-      #{rushActivityId,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{orderAmount,jdbcType=DECIMAL}, 
+      #{rushActivityId,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{orderAmount,jdbcType=DECIMAL},
       #{createTime,jdbcType=TIMESTAMP}, #{payTime,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.baibai.rush.db.po.Order">
