@@ -8,7 +8,7 @@
     </commentGenerator>
     <jdbcConnection
             driverClass="com.mysql.cj.jdbc.Driver"
-            connectionURL="jdbc:mysql://localhost:3306/seckill_jiuzhang?serverTimezone=GMT"
+            connectionURL="jdbc:mysql://localhost:3306/rush_baibai?serverTimezone=GMT"
             userId="root"
             password="root">
     </jdbcConnection>
@@ -18,7 +18,7 @@
     </javaTypeResolver>
 
     <!-- targetProject:生成PO类的位置 -->
-    <javaModelGenerator targetPackage="com.jiuzhang.seckill.db.po" targetProject="./src/main/java">
+    <javaModelGenerator targetPackage="com.baibai.rush.db.po" targetProject="./src/main/java">
       <!-- enableSubPackages:是否让schema作为包的后缀 -->
       <property name="enableSubPackages" value="true" />
       <!-- 从数据库返回的值被清理前后的空格 -->
@@ -33,13 +33,13 @@
     </sqlMapGenerator>
 
     <!-- targetPackage：mapper接口生成的位置 -->
-    <javaClientGenerator type="XMLMAPPER" targetPackage="com.jiuzhang.seckill.db.mappers" targetProject="./src/main/java">
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.baibai.rush.db.mappers" targetProject="./src/main/java">
       <!-- enableSubPackages:是否让schema作为包的后缀 -->
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
 
-    <table schema="" tableName="seckill_order" domainObjectName="Order" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false"></table>
-    <table schema="" tableName="seckill_user" domainObjectName="User" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false"></table>
+    <table schema="" tableName="rush_order" domainObjectName="Order" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false"></table>
+    <table schema="" tableName="rush_user" domainObjectName="User" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false"></table>
 
   </context>
 </generatorConfiguration>

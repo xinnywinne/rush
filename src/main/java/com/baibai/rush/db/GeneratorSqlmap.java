@@ -1,4 +1,4 @@
-package com.jiuzhang.seckill.db;
+package com.baibai.rush.db;
 
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;
