@@ -12,7 +12,7 @@ public class RushActivity {
 
     private BigDecimal oldPrice;
 
-    private BigDecimal rushPrice;
+    private BigDecimal seckillPrice;
 
     private Integer activityStatus;
 
@@ -58,12 +58,12 @@ public class RushActivity {
         this.oldPrice = oldPrice;
     }
 
-    public BigDecimal getRushPrice() {
-        return rushPrice;
+    public BigDecimal getSeckillPrice() {
+        return seckillPrice;
     }
 
-    public void setRushPrice(BigDecimal rushPrice) {
-        this.rushPrice = rushPrice;
+    public void setSeckillPrice(BigDecimal seckillPrice) {
+        this.seckillPrice = seckillPrice;
     }
 
     public Integer getActivityStatus() {
