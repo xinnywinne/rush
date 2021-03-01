@@ -1,6 +1,7 @@
 package com.baibai.rush.db.mappers;
 
 import com.baibai.rush.db.po.RushActivity;
+import java.util.List;
 
 public interface RushActivityMapper {
     int deleteByPrimaryKey(Long id);
@@ -14,4 +15,6 @@ public interface RushActivityMapper {
     int updateByPrimaryKeySelective(RushActivity record);
 
     int updateByPrimaryKey(RushActivity record);
+
+    List<RushActivity> queryRushActivitysByStatus(int activityStatus);
 }
